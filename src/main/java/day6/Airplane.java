@@ -43,5 +43,6 @@ public class Airplane {
     }
     public void fillUp(double n){
         fuel +=n;
+
     }
 }
