@@ -14,10 +14,10 @@ public class Task2 {
         Player p4 = new Player(r.nextInt((MAX_STAMINA / 10) + (MAX_STAMINA / 10 * 9)));
         Player p5 = new Player(r.nextInt((MAX_STAMINA / 10) + (MAX_STAMINA / 10 * 9)));
         Player p6 = new Player(r.nextInt((MAX_STAMINA / 10) + (MAX_STAMINA / 10 * 9)));
-        System.out.println("Ввели 6 игроков и на поле: " + Player.countPlayers + "\n");
+        System.out.println("Ввели 6 игроков и на поле: " + Player.getCountPlayers() + "\n");
         Player p7 = new Player(r.nextInt((MAX_STAMINA / 10) + (MAX_STAMINA / 10 * 9)));
         Player p8 = new Player(r.nextInt((MAX_STAMINA / 10) + (MAX_STAMINA / 10 * 9)));
-        System.out.println("Ввели 8 игроков, а на поле: " + Player.countPlayers + "\n");
+        System.out.println("Ввели 8 игроков, а на поле: " + Player.getCountPlayers() + "\n");
         Player.info();
         for (int i = p1.getStamina() + 1; i > MIN_STAMINA; i--) {
             p1.run();
