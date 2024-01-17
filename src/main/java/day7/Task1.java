@@ -1,7 +1,6 @@
 package day7;
 
 
-
 public class Task1 {
     public static void main(String[] args) {
         Airplane yak1 = new Airplane("ОКБ Яковлева", 1941, 8.48, 2950);

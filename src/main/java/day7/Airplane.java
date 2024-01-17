@@ -36,20 +36,25 @@ public class Airplane {
         this.year = year;
         this.length = length;
         this.weight = weight;
-        fuel=0.0;
+        fuel = 0.0;
     }
-    void info(){
+
+    void info() {
         System.out.printf("Изготовитель: %s \nГод выпуска: %d год\nДлина: %.2f м\nВес: %.3f кг\nКоличество топлива в баке: %.3f л\n\n", manufacturer, year, length, weight, fuel);
     }
-    public void fillUp(double n){
-        fuel +=n;
+
+    public void fillUp(double n) {
+        fuel += n;
 
     }
-    public static void compareAirplanes(Airplane q, Airplane w){
-        if (q.length>w.length){
-            System.out.printf("Самолёт %s длинее",q.manufacturer);
+
+    public static void compareAirplanes(Airplane q, Airplane w) {
+        if (q.length > w.length) { // в решении вызываются через get(q.getLength()). Но если внутри класса метод создаю можно и так же? По крайней мере программа работает
+            System.out.printf("Самолёт %s длиннее", q.manufacturer);
+        } else if (q.length < w.length) {
+            System.out.printf("Самолёт %s длиннее", w.manufacturer);
         } else {
-            System.out.printf("Самолёт %s длинее",w.manufacturer);
+            System.out.println("Они равны");
         }
     }
 }
