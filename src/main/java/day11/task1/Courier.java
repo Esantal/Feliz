@@ -1,10 +1,11 @@
 package day11.task1;
 
+
 public class Courier implements Worker {
-    private int salary = 0;
+    private int salary = 0;// можно было не обозначать
     private String isPayed = "Бонус не был выплачен";
-    private Warehouse wCourier = new Warehouse();
-    private int bonusCounter = 0;
+    private Warehouse wCourier;
+    private int bonusCounter = 0;// можно было не обозначать
 
 
     public int getSalary() {
@@ -23,8 +24,9 @@ public class Courier implements Worker {
                 '}';
     }
 
-    /*public Courier() {    - в задании написано сделать, но зачем если на ввод ничего не надо давать?
-    }*/
+    public Courier(Warehouse wCourier) {
+        this.wCourier = wCourier;
+    }
 
     @Override
     public void doWork() {
@@ -47,6 +49,7 @@ public class Courier implements Worker {
         }
 
     }
+
     public int getWCourier() {
         return wCourier.getCountDeliveredOrders();
     }

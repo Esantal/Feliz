@@ -38,6 +38,6 @@ public class Paladin extends Hero implements PhysAttack, Healer {
 
     @Override
     public String toString() {
-        return "Paladin{"+getHealth()+"}";
+        return "Paladin{" + getHealth() + "}";
     }
 }

@@ -34,6 +34,6 @@ public class Magician extends Hero implements PhysAttack, MagicAttack {
 
     @Override
     public String toString() {
-        return "Magician{"+getHealth()+"}";
+        return "Magician{" + getHealth() +"}";
     }
 }

@@ -1,6 +1,6 @@
 package day11.task1;
 
-public class Warehouse  {
+public class Warehouse {
     private int countPickedOrders;
     private int countDeliveredOrders;
 
@@ -28,10 +28,11 @@ public class Warehouse  {
                 '}';
     }
 
-    public void plusCountDeliveredOrders(){
+    public void plusCountDeliveredOrders() {
         countDeliveredOrders++;
     }
-    public void plusCountPickedOrders(){
+
+    public void plusCountPickedOrders() {
         countPickedOrders++;
     }
 }

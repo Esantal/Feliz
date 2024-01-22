@@ -21,6 +21,6 @@ public class Warrior extends Hero implements PhysAttack {
 
     @Override
     public String toString() {
-        return "Warrior{"+getHealth()+"}";
+        return "Warrior{" + getHealth() + "}";
     }
 }

@@ -52,6 +52,6 @@ public class Shaman extends Hero implements PhysAttack, MagicAttack, Healer {
 
     @Override
     public String toString() {
-        return "Shaman{"+getHealth()+"}";
+        return "Shaman{" + getHealth() + "}";
     }
 }

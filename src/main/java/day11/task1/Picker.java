@@ -1,10 +1,10 @@
 package day11.task1;
 
 public class Picker implements Worker {
-    private int salary;
-    private String isPayed;
-    private Warehouse wPicker =new Warehouse();
-    private int bonusCounter =0;
+    private int salary;// можно было не обозначать
+    private String isPayed;// про неё совсем забыл и перевел её функционал на bonusCounter
+    private Warehouse wPicker;
+    private int bonusCounter = 0;// можно было не обозначать
 
     public int getSalary() {
         return salary;
@@ -22,10 +22,12 @@ public class Picker implements Worker {
                 '}';
     }
 
-    /*public Picker() {
-    }*/
+    public Picker(Warehouse wPicker) {
+        this.wPicker = wPicker;
+    }
+
     public void doWork() {
-        salary += 80;
+        salary += 80;// в решении через переменную
         wPicker.plusCountPickedOrders();
     }
 
@@ -41,6 +43,17 @@ public class Picker implements Worker {
         } else {
             System.out.println("Бонус уже был выплачен");
         }
+        /* в решении
+        if (wPicker.getCountPickedOrders()<10_000){ _ можно отделять тысячи
+            System.out.println("Бонус пока не доступен");
+            return;
+        }
+        if (isPayed){
+            System.out.println("Бонус уже был выплачен");
+            return;
+        }
+        salary+=70000;
+        isPayed=true;*/
 
     }
 
